@@ -67,9 +67,9 @@
 
     audio.currentTime = 0;
     audio.play();
-    keyDiv.classList.toggle('playing');
+    keyDiv.classList.add('playing');
     audio.onended = function() {
-      keyDiv.classList.toggle('playing');
+      keyDiv.classList.remove('playing');
     }
 
   });
